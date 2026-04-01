@@ -13,50 +13,61 @@ body{background:#0F172A;color:#E2E8F0;font-family:'DM Sans',system-ui,sans-serif
 ::-webkit-scrollbar-thumb{background:#334155;border-radius:4px}
 ::-webkit-scrollbar-thumb:hover{background:#475569}
 .header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;flex-wrap:wrap;gap:16px}
-.brand{font-size:11px;font-weight:600;color:#F59E0B;text-transform:uppercase;letter-spacing:3px;margin-bottom:4px}
-h1{font-size:26px;font-weight:800;letter-spacing:-0.5px}
+.brand{font-size:12px;font-weight:600;color:#F59E0B;text-transform:uppercase;letter-spacing:3px;margin-bottom:4px}
+h1{font-size:28px;font-weight:800;letter-spacing:-0.5px}
 .meta{display:flex;align-items:center;gap:8px;margin-top:6px}
-.meta span{font-size:10px;color:#475569}
-.btn{font-size:10px;color:#F59E0B;background:none;border:1px solid rgba(245,158,11,0.25);border-radius:4px;padding:2px 8px;cursor:pointer;font-weight:600;font-family:inherit}
+.meta span{font-size:11px;color:#475569}
+.btn{font-size:11px;color:#F59E0B;background:none;border:1px solid rgba(245,158,11,0.25);border-radius:4px;padding:3px 10px;cursor:pointer;font-weight:600;font-family:inherit}
 .btn:hover{background:rgba(245,158,11,0.1)}
 .tabs{display:flex;gap:4px;background:#1E293B;border-radius:8px;padding:3px}
-.tab{padding:8px 18px;border-radius:6px;border:none;cursor:pointer;font-size:12px;font-weight:600;background:transparent;color:#64748B;transition:all 0.15s;font-family:inherit}
+.tab{padding:10px 20px;border-radius:6px;border:none;cursor:pointer;font-size:13px;font-weight:600;background:transparent;color:#64748B;transition:all 0.15s;font-family:inherit}
 .tab.on{background:#334155;color:#F1F5F9}
 .stats{display:flex;gap:16px;margin-bottom:28px;flex-wrap:wrap}
 .sc{background:#1E293B;border-radius:10px;padding:16px 24px;flex:1 1 150px;min-width:140px}
-.sv{font-size:28px;font-weight:800;letter-spacing:-1px}
-.sl{font-size:11px;font-weight:500;color:#64748B;margin-top:2px;text-transform:uppercase;letter-spacing:1px}
+.sv{font-size:30px;font-weight:800;letter-spacing:-1px}
+.sl{font-size:12px;font-weight:500;color:#64748B;margin-top:2px;text-transform:uppercase;letter-spacing:1px}
 .filters{display:flex;gap:12px;margin-bottom:20px;align-items:center;flex-wrap:wrap}
-.fl{font-size:11px;color:#64748B;font-weight:600}
-.fb{padding:5px 14px;border-radius:20px;border:1px solid #334155;background:transparent;color:#94A3B8;font-size:11px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.15s}
+.fl{font-size:12px;color:#64748B;font-weight:600}
+.fb{padding:6px 16px;border-radius:20px;border:1px solid #334155;background:transparent;color:#94A3B8;font-size:12px;font-weight:600;cursor:pointer;font-family:inherit;transition:all 0.15s}
 .fb.on{border-color:#F59E0B;background:rgba(245,158,11,0.1);color:#F59E0B}
-.legend{margin-left:auto;display:flex;gap:8px;flex-wrap:wrap}
-.li{display:flex;align-items:center;gap:4px}
-.ld{width:10px;height:10px;border-radius:2px}
-.lt{font-size:10px;color:#64748B;font-weight:500}
-.st{font-size:13px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;padding-left:220px}
-.gw{overflow-x:auto;border-radius:8px;border:1px solid #1E293B;margin-bottom:32px}
-.gh{display:flex;position:sticky;top:0;z-index:2;background:#0F172A;border-bottom:1px solid #1E293B}
-.gnh{min-width:220px;max-width:220px;padding:8px 12px;font-size:11px;font-weight:600;color:#64748B;position:sticky;left:0;background:#0F172A;z-index:3}
-.gch{min-width:56px;max-width:56px;padding:8px 2px;font-size:9px;font-weight:500;color:#475569;text-align:center;border-left:1px solid #1E293B}
+.legend{margin-left:auto;display:flex;gap:10px;flex-wrap:wrap}
+.li{display:flex;align-items:center;gap:5px}
+.ld{width:12px;height:12px;border-radius:2px}
+.lt{font-size:11px;color:#64748B;font-weight:500}
+.st{font-size:14px;font-weight:700;color:#94A3B8;text-transform:uppercase;letter-spacing:2px;margin-bottom:12px;padding-left:240px}
+
+/* === PIPELINE GANTT === */
+.gw{overflow-x:auto;border-radius:8px;border:1px solid #1E293B;margin-bottom:32px;max-height:80vh;overflow-y:auto}
+.gh{display:flex;position:sticky;top:0;z-index:10;background:#0F172A;border-bottom:2px solid #334155}
+.gnh{min-width:240px;max-width:240px;padding:10px 14px;font-size:13px;font-weight:700;color:#94A3B8;position:sticky;left:0;background:#0F172A;z-index:11;text-transform:uppercase;letter-spacing:1px}
+.gch{min-width:60px;max-width:60px;padding:10px 2px;font-size:10px;font-weight:700;color:#94A3B8;text-align:center;border-left:1px solid #334155;background:#0F172A}
 .gr{display:flex;border-bottom:1px solid rgba(30,41,59,0.5);transition:background 0.15s}
 .gr:hover{background:rgba(30,41,59,0.4)}
-.gn{min-width:220px;max-width:220px;padding:6px 12px;font-size:12px;color:#CBD5E1;position:sticky;left:0;background:#0F172A;z-index:1;display:flex;align-items:center;border-right:1px solid #1E293B;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.gn.base{font-weight:600;color:#F1F5F9}
-.gc{min-width:56px;max-width:56px;padding:4px 1px;border-left:1px solid rgba(30,41,59,0.3);display:flex;align-items:center;justify-content:center}
-.pc{color:#FFF;font-size:8px;font-weight:700;padding:3px 4px;border-radius:3px;width:90%;text-align:center;letter-spacing:0.5px;opacity:0.9}
-.roh{min-width:160px;max-width:160px;padding:10px 12px;font-size:11px;font-weight:600;color:#64748B;position:sticky;left:0;background:#0F172A;z-index:3}
-.rch{min-width:120px;max-width:120px;padding:10px 4px;font-size:10px;font-weight:500;color:#475569;text-align:center;border-left:1px solid #1E293B}
-.ro{min-width:160px;max-width:160px;padding:10px 12px;font-size:13px;font-weight:700;position:sticky;left:0;background:#0F172A;z-index:1;border-right:1px solid #1E293B}
-.rc{min-width:120px;max-width:120px;padding:6px 4px;border-left:1px solid rgba(30,41,59,0.3);display:flex;align-items:center;justify-content:center}
-.rp{font-size:10px;font-weight:600;padding:4px 6px;border-radius:4px;text-align:center;width:95%}
-.pth{min-width:160px;max-width:160px;padding:10px 12px;font-size:11px;font-weight:600;color:#64748B;position:sticky;left:0;background:#0F172A;z-index:3}
-.pch{min-width:110px;max-width:110px;padding:10px 4px;font-size:10px;font-weight:600;color:#475569;text-align:center;border-left:1px solid #1E293B}
-.pt{min-width:160px;max-width:160px;padding:10px 12px;font-size:11px;font-weight:700;position:sticky;left:0;background:#0F172A;z-index:1;border-right:1px solid #1E293B}
-.pe{min-width:110px;max-width:110px;padding:6px 4px;border-left:1px solid rgba(30,41,59,0.3);display:flex;align-items:center;justify-content:center}
-.pp{font-size:9px;font-weight:600;padding:4px 5px;border-radius:4px;text-align:center;width:95%}
-.err{background:rgba(127,29,29,0.25);border:1px solid rgba(239,68,68,0.25);border-radius:8px;padding:12px 16px;margin-bottom:20px;color:#FCA5A5;font-size:13px}
-.dbg{background:rgba(30,58,138,0.25);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:12px 16px;margin-bottom:20px;color:#93C5FD;font-size:11px;font-family:monospace;white-space:pre-wrap}
+.gn{min-width:240px;max-width:240px;padding:8px 14px;font-size:13px;color:#CBD5E1;position:sticky;left:0;background:#0F172A;z-index:1;display:flex;align-items:center;border-right:1px solid #1E293B;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gn.base{font-weight:700;color:#F1F5F9}
+.gc{min-width:60px;max-width:60px;padding:4px 1px;border-left:1px solid rgba(30,41,59,0.3);display:flex;align-items:center;justify-content:center}
+.pc{color:#FFF;font-size:9px;font-weight:700;padding:4px 4px;border-radius:3px;width:90%;text-align:center;letter-spacing:0.5px;opacity:0.9}
+
+/* === RELEASES === */
+.rw{overflow-x:auto;border-radius:8px;border:1px solid #1E293B;max-height:80vh;overflow-y:auto}
+.rgh{display:flex;position:sticky;top:0;z-index:10;background:#0F172A;border-bottom:2px solid #334155}
+.roh{min-width:180px;max-width:180px;padding:12px 14px;font-size:13px;font-weight:700;color:#94A3B8;position:sticky;left:0;background:#0F172A;z-index:11;text-transform:uppercase;letter-spacing:1px}
+.rch{min-width:130px;max-width:130px;padding:12px 4px;font-size:11px;font-weight:700;color:#94A3B8;text-align:center;border-left:1px solid #334155;background:#0F172A}
+.ro{min-width:180px;max-width:180px;padding:10px 14px;font-size:14px;font-weight:700;position:sticky;left:0;background:#0F172A;z-index:1;border-right:1px solid #1E293B}
+.rc{min-width:130px;max-width:130px;padding:4px 4px;border-left:1px solid rgba(30,41,59,0.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+.rp{font-size:11px;font-weight:600;padding:5px 6px;border-radius:4px;text-align:center;width:95%}
+
+/* === PA SUBS === */
+.pw{overflow-x:auto;border-radius:8px;border:1px solid #1E293B;max-height:80vh;overflow-y:auto}
+.pgh{display:flex;position:sticky;top:0;z-index:10;background:#0F172A;border-bottom:2px solid #334155}
+.pth{min-width:180px;max-width:180px;padding:12px 14px;font-size:13px;font-weight:700;color:#94A3B8;position:sticky;left:0;background:#0F172A;z-index:11;text-transform:uppercase;letter-spacing:1px}
+.pch{min-width:120px;max-width:120px;padding:12px 4px;font-size:11px;font-weight:700;color:#94A3B8;text-align:center;border-left:1px solid #334155;background:#0F172A}
+.pt{min-width:180px;max-width:180px;padding:10px 14px;font-size:12px;font-weight:700;position:sticky;left:0;background:#0F172A;z-index:1;border-right:1px solid #1E293B}
+.pe{min-width:120px;max-width:120px;padding:6px 4px;border-left:1px solid rgba(30,41,59,0.3);display:flex;align-items:center;justify-content:center}
+.pp{font-size:10px;font-weight:600;padding:5px 5px;border-radius:4px;text-align:center;width:95%}
+
+.err{background:rgba(127,29,29,0.25);border:1px solid rgba(239,68,68,0.25);border-radius:8px;padding:12px 16px;margin-bottom:20px;color:#FCA5A5;font-size:14px}
+.dbg{background:rgba(30,58,138,0.25);border:1px solid rgba(59,130,246,0.25);border-radius:8px;padding:12px 16px;margin-bottom:20px;color:#93C5FD;font-size:12px;font-family:monospace;white-space:pre-wrap}
 .ld-wrap{display:flex;gap:6px;justify-content:center;padding:60px}
 .dot{width:10px;height:10px;border-radius:50%;background:#F59E0B;animation:pulse 1.2s ease-in-out infinite}
 .dot:nth-child(2){animation-delay:0.2s}
@@ -91,59 +102,32 @@ h1{font-size:26px;font-weight:800;letter-spacing:-0.5px}
 <div id="paTab" class="hidden"></div>
 
 <script>
-const SHEET_ID = '19PDSB8pdtyNKFLeVP5Sw4-ve7i3s2ZivLy9kdnl9iq0';
-const GIDS = {pipeline:'1736378104', paSubs:'1968874113', releases:'1723595420'};
-const PC = {'ART':'#F59E0B','ART READY':'#F59E0B','ANIM':'#8B5CF6','ANIM READY':'#8B5CF6','DEV':'#3B82F6','DEV/QA':'#06B6D4','QA':'#EF4444','PZ':'#10B981','GLI':'#6366F1','DGE':'#EC4899'};
-const OC = {'betmgm':'#F59E0B','fan duel':'#3B82F6','fanduel':'#3B82F6','draft kings':'#10B981','draftkings':'#10B981','bgaming':'#EC4899','crown coin':'#A855F7'};
-const FC = ['#F59E0B','#3B82F6','#10B981','#EC4899','#A855F7','#06B6D4','#EF4444'];
-let S = {tab:'pipeline',filter:'all',pipeline:null,paSubs:null,releases:null};
-let callbackCounter = 0;
+const SHEET_ID='19PDSB8pdtyNKFLeVP5Sw4-ve7i3s2ZivLy9kdnl9iq0';
+const GIDS={pipeline:'1736378104',paSubs:'1968874113',releases:'1723595420'};
+const PC={'ART':'#F59E0B','ART READY':'#F59E0B','ANIM':'#8B5CF6','ANIM READY':'#8B5CF6','DEV':'#3B82F6','DEV/QA':'#06B6D4','QA':'#EF4444','PZ':'#10B981','GLI':'#6366F1','DGE':'#EC4899'};
+const OC={'betmgm':'#F59E0B','fan duel':'#3B82F6','fanduel':'#3B82F6','draft kings':'#10B981','draftkings':'#10B981','bgaming':'#EC4899','crown coin':'#A855F7'};
+const FCL=['#F59E0B','#3B82F6','#10B981','#EC4899','#A855F7','#06B6D4','#EF4444'];
+let S={tab:'pipeline',filter:'all',pipeline:null,paSubs:null,releases:null};
+let cbc=0;
 
-function oc(n){const l=n.toLowerCase();for(const[k,c]of Object.entries(OC)){if(l.includes(k))return c;}let h=0;for(let i=0;i<n.length;i++)h=n.charCodeAt(i)+((h<<5)-h);return FC[Math.abs(h)%FC.length];}
-function pc(p){const c=p.trim().replace(/ READY/g,'').replace(/\s+$/,'');return PC[c]||PC[p.trim()]||'#6B7280';}
+function oc(n){const l=n.toLowerCase();for(const[k,c]of Object.entries(OC)){if(l.includes(k))return c;}let h=0;for(let i=0;i<n.length;i++)h=n.charCodeAt(i)+((h<<5)-h);return FCL[Math.abs(h)%FCL.length];}
+function phc(p){const c=p.trim().replace(/ READY/g,'').replace(/\s+$/,'');return PC[c]||PC[p.trim()]||'#6B7280';}
 
-// JSONP-based Google Sheets query - works from file:// URLs
-function querySheet(gid) {
-  return new Promise((resolve, reject) => {
-    const cbName = '_sheetCB' + (callbackCounter++);
-    const timeout = setTimeout(() => {
-      delete window[cbName];
-      if (document.getElementById('script_'+cbName)) document.getElementById('script_'+cbName).remove();
-      reject(new Error('Request timed out for gid=' + gid));
-    }, 15000);
-
-    window[cbName] = function(response) {
-      clearTimeout(timeout);
-      delete window[cbName];
-      if (document.getElementById('script_'+cbName)) document.getElementById('script_'+cbName).remove();
-      
-      if (response.status === 'error') {
-        reject(new Error(response.errors.map(e=>e.message).join(', ')));
-        return;
-      }
-      
-      const table = response.table;
-      const rows = [];
-      for (let r = 0; r < table.rows.length; r++) {
-        const row = [];
-        for (let c = 0; c < table.cols.length; c++) {
-          const cell = table.rows[r].c[c];
-          row.push(cell && cell.v != null ? String(cell.v) : '');
-        }
-        rows.push(row);
-      }
+function querySheet(gid){
+  return new Promise((resolve,reject)=>{
+    const cb='_cb'+(cbc++);
+    const to=setTimeout(()=>{delete window[cb];const s=document.getElementById('s_'+cb);if(s)s.remove();reject(new Error('Timeout gid='+gid));},15000);
+    window[cb]=function(r){
+      clearTimeout(to);delete window[cb];const s=document.getElementById('s_'+cb);if(s)s.remove();
+      if(r.status==='error'){reject(new Error(r.errors.map(e=>e.message).join(', ')));return;}
+      const t=r.table;const rows=[];
+      for(let ri=0;ri<t.rows.length;ri++){const row=[];for(let ci=0;ci<t.cols.length;ci++){const cell=t.rows[ri].c[ci];row.push(cell&&cell.v!=null?String(cell.v):'');}rows.push(row);}
       resolve(rows);
     };
-
-    const script = document.createElement('script');
-    script.id = 'script_' + cbName;
-    script.src = 'https://docs.google.com/spreadsheets/d/' + SHEET_ID + '/gviz/tq?gid=' + gid + '&tqx=responseHandler:' + cbName;
-    script.onerror = function() {
-      clearTimeout(timeout);
-      delete window[cbName];
-      reject(new Error('Script load failed for gid=' + gid));
-    };
-    document.body.appendChild(script);
+    const sc=document.createElement('script');sc.id='s_'+cb;
+    sc.src='https://docs.google.com/spreadsheets/d/'+SHEET_ID+'/gviz/tq?gid='+gid+'&tqx=responseHandler:'+cb;
+    sc.onerror=function(){clearTimeout(to);delete window[cb];reject(new Error('Script failed gid='+gid));};
+    document.body.appendChild(sc);
   });
 }
 
@@ -158,8 +142,7 @@ function parsePipeline(rows){
     for(let j=1;j<rows[i].length;j++){const v=(rows[i][j]||'').trim();if(v&&v!=='`')phases.push([j,v]);}
     if(!phases.length)continue;
     const isBase=name.includes('***');
-    const g={name:name.replace(/\*\*\*/g,'').trim()+(isBase?' ★':''),p:phases,isBase};
-    (fl?upcoming:locked).push(g);
+    (fl?upcoming:locked).push({name:name.replace(/\*\*\*/g,'').trim()+(isBase?' ★':''),p:phases,isBase});
   }
   return{headers,locked,upcoming};
 }
@@ -182,36 +165,25 @@ function parseReleases(rows){
   const operators=[];
   for(let i=1;i<rows.length;i++){
     const op=(rows[i][0]||'').trim();if(!op)continue;
-    const games=[];for(let j=1;j<rows[i].length;j++){const v=(rows[i][j]||'').trim();if(v)games.push([j,v]);}
+    const games=[];
+    for(let j=1;j<rows[i].length;j++){const v=(rows[i][j]||'').trim();if(v)games.push([j,v]);}
     if(games.length)operators.push({op,color:oc(op),games});
   }
   return{headers,operators};
 }
 
 async function fetchAllData(){
-  const err=document.getElementById('errorBar');
-  const dbg=document.getElementById('debugBar');
-  const ld=document.getElementById('loading');
+  const err=document.getElementById('errorBar');const dbg=document.getElementById('debugBar');const ld=document.getElementById('loading');
   err.classList.add('hidden');dbg.classList.add('hidden');ld.classList.remove('hidden');
-  
   try{
-    const [pipeRows,paRows,relRows] = await Promise.all([
-      querySheet(GIDS.pipeline),
-      querySheet(GIDS.paSubs),
-      querySheet(GIDS.releases),
-    ]);
-    
-    S.pipeline=parsePipeline(pipeRows);
-    S.paSubs=parsePASubs(paRows);
-    S.releases=parseReleases(relRows);
+    const[pR,paR,relR]=await Promise.all([querySheet(GIDS.pipeline),querySheet(GIDS.paSubs),querySheet(GIDS.releases)]);
+    S.pipeline=parsePipeline(pR);S.paSubs=parsePASubs(paR);S.releases=parseReleases(relR);
     document.getElementById('lastUpdated').textContent='Data from: '+new Date().toLocaleTimeString();
-    ld.classList.add('hidden');
-    render();
+    ld.classList.add('hidden');render();
   }catch(e){
     console.error(e);ld.classList.add('hidden');
     err.textContent='Failed to load data: '+e.message;err.classList.remove('hidden');
-    dbg.textContent='Debug info:\nSheet ID: '+SHEET_ID+'\nGIDs: '+JSON.stringify(GIDS)+'\nError: '+e.stack;
-    dbg.classList.remove('hidden');
+    dbg.textContent='Sheet ID: '+SHEET_ID+'\nGIDs: '+JSON.stringify(GIDS)+'\nError: '+e.stack;dbg.classList.remove('hidden');
   }
 }
 
@@ -220,7 +192,8 @@ function setFilter(f){S.filter=f;render();}
 
 function renderGantt(el,data,headers,title){
   let h='';if(title)h+=`<div class="st">${title}</div>`;
-  h+=`<div class="gw"><div style="min-width:${headers.length*56+220}px"><div class="gh"><div class="gnh">GAME</div>`;
+  h+=`<div class="gw"><div style="min-width:${headers.length*60+240}px">`;
+  h+=`<div class="gh"><div class="gnh">GAME</div>`;
   headers.forEach(x=>{h+=`<div class="gch">${x}</div>`;});h+=`</div>`;
   data.forEach(g=>{
     const cls=g.isBase||g.name.includes('★')?'gn base':'gn';
@@ -228,27 +201,33 @@ function renderGantt(el,data,headers,title){
     headers.forEach((_,i)=>{
       const cell=g.p.find(([col])=>col===i+1);const phase=cell?cell[1]:null;
       h+=`<div class="gc">`;
-      if(phase){const lbl=phase.replace(/ READY/g,'').replace(/ANIM/g,'ANM').substring(0,5);h+=`<div class="pc" style="background:${pc(phase)}" title="${phase}">${lbl}</div>`;}
+      if(phase){const lbl=phase.replace(/ READY/g,'').replace(/ANIM/g,'ANM').substring(0,5);h+=`<div class="pc" style="background:${phc(phase)}" title="${phase}">${lbl}</div>`;}
       h+=`</div>`;});h+=`</div>`;});
   h+=`</div></div>`;el.innerHTML=h;
 }
 
 function renderReleases(){
   const{headers,operators}=S.releases;const el=document.getElementById('releasesTab');
-  let h=`<div class="gw"><div style="min-width:${headers.length*120+160}px"><div class="gh"><div class="roh">OPERATOR</div>`;
+  let h=`<div class="rw"><div style="min-width:${headers.length*130+180}px">`;
+  h+=`<div class="rgh"><div class="roh">OPERATOR</div>`;
   headers.forEach(x=>{h+=`<div class="rch">${x}</div>`;});h+=`</div>`;
   operators.forEach(row=>{
     h+=`<div class="gr"><div class="ro" style="color:${row.color}">${row.op}</div>`;
     headers.forEach((_,i)=>{
-      const game=row.games.find(([col])=>col===i+1);
-      h+=`<div class="rc">`;if(game)h+=`<div class="rp" style="background:${row.color}18;border:1px solid ${row.color}40;color:${row.color}">${game[1]}</div>`;
+      // Support multiple games in the same column
+      const games=row.games.filter(([col])=>col===i+1);
+      h+=`<div class="rc">`;
+      games.forEach(game=>{
+        h+=`<div class="rp" style="background:${row.color}18;border:1px solid ${row.color}40;color:${row.color}">${game[1]}</div>`;
+      });
       h+=`</div>`;});h+=`</div>`;});
   h+=`</div></div>`;el.innerHTML=h;
 }
 
 function renderPA(){
   const{headers,sections}=S.paSubs;const el=document.getElementById('paTab');
-  let h=`<div class="gw"><div style="min-width:${headers.length*110+160}px"><div class="gh"><div class="pth">TYPE</div>`;
+  let h=`<div class="pw"><div style="min-width:${headers.length*120+180}px">`;
+  h+=`<div class="pgh"><div class="pth">TYPE</div>`;
   headers.forEach(m=>{h+=`<div class="pch">${m}</div>`;});h+=`</div>`;
   sections.forEach(sec=>{
     h+=`<div class="gr"><div class="pt" style="color:${sec.color}">${sec.label}</div>`;
@@ -295,7 +274,6 @@ function render(){
   if(tab==='pa'&&paSubs)renderPA();
 }
 
-// Start loading
 fetchAllData();
 </script>
 </body>
